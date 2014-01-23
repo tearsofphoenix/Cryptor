@@ -22,6 +22,9 @@
 		6099957918912C930024CE3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6099955918912C930024CE3F /* UIKit.framework */; };
 		6099958118912C930024CE3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6099957F18912C930024CE3F /* InfoPlist.strings */; };
 		6099958318912C930024CE3F /* CryptorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6099958218912C930024CE3F /* CryptorTests.m */; };
+		6099958E18913A7D0024CE3F /* UIView+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6099958D18913A7D0024CE3F /* UIView+FirstResponder.m */; };
+		6099959218913ABF0024CE3F /* VCMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6099959018913ABF0024CE3F /* VCMethodViewController.m */; };
+		60999596189147280024CE3F /* VCStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 60999595189147280024CE3F /* VCStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		6099957E18912C930024CE3F /* CryptorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptorTests-Info.plist"; sourceTree = "<group>"; };
 		6099958018912C930024CE3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6099958218912C930024CE3F /* CryptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptorTests.m; sourceTree = "<group>"; };
+		6099958C18913A7D0024CE3F /* UIView+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FirstResponder.h"; sourceTree = "<group>"; };
+		6099958D18913A7D0024CE3F /* UIView+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FirstResponder.m"; sourceTree = "<group>"; };
+		6099958F18913ABF0024CE3F /* VCMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMethodViewController.h; sourceTree = "<group>"; };
+		6099959018913ABF0024CE3F /* VCMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMethodViewController.m; sourceTree = "<group>"; };
+		60999594189147280024CE3F /* VCStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCStyle.h; sourceTree = "<group>"; };
+		60999595189147280024CE3F /* VCStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +125,16 @@
 				6099956418912C930024CE3F /* VCAppDelegate.h */,
 				6099956518912C930024CE3F /* VCAppDelegate.m */,
 				6099956718912C930024CE3F /* Main.storyboard */,
+				6099958F18913ABF0024CE3F /* VCMethodViewController.h */,
+				6099959018913ABF0024CE3F /* VCMethodViewController.m */,
 				6099956A18912C930024CE3F /* VCFirstViewController.h */,
 				6099956B18912C930024CE3F /* VCFirstViewController.m */,
+				60999594189147280024CE3F /* VCStyle.h */,
+				60999595189147280024CE3F /* VCStyle.m */,
 				6099956D18912C930024CE3F /* VCSecondViewController.h */,
 				6099956E18912C930024CE3F /* VCSecondViewController.m */,
+				6099958C18913A7D0024CE3F /* UIView+FirstResponder.h */,
+				6099958D18913A7D0024CE3F /* UIView+FirstResponder.m */,
 				6099957018912C930024CE3F /* Images.xcassets */,
 				6099955C18912C930024CE3F /* Supporting Files */,
 			);
@@ -252,10 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6099959218913ABF0024CE3F /* VCMethodViewController.m in Sources */,
 				6099956C18912C930024CE3F /* VCFirstViewController.m in Sources */,
 				6099956218912C930024CE3F /* main.m in Sources */,
+				60999596189147280024CE3F /* VCStyle.m in Sources */,
 				6099956618912C930024CE3F /* VCAppDelegate.m in Sources */,
 				6099956F18912C930024CE3F /* VCSecondViewController.m in Sources */,
+				6099958E18913A7D0024CE3F /* UIView+FirstResponder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,10 +400,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_STATIC_ANALYZER_MODE = deep;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptor/Cryptor-Prefix.pch";
 				INFOPLIST_FILE = "Cryptor/Cryptor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,10 +415,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_STATIC_ANALYZER_MODE = deep;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptor/Cryptor-Prefix.pch";
 				INFOPLIST_FILE = "Cryptor/Cryptor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

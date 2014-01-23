@@ -10,4 +10,8 @@
 
 @interface VCFirstViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *doButton;
+
+- (IBAction)handleDoButtonTappedEvent:(id)sender;
+
 @end
