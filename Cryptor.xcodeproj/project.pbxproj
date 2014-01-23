@@ -25,6 +25,7 @@
 		6099958E18913A7D0024CE3F /* UIView+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6099958D18913A7D0024CE3F /* UIView+FirstResponder.m */; };
 		6099959218913ABF0024CE3F /* VCMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6099959018913ABF0024CE3F /* VCMethodViewController.m */; };
 		60999596189147280024CE3F /* VCStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 60999595189147280024CE3F /* VCStyle.m */; };
+		609995991891524B0024CE3F /* UIAlertView+BlockSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 609995981891524B0024CE3F /* UIAlertView+BlockSupport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		6099959018913ABF0024CE3F /* VCMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMethodViewController.m; sourceTree = "<group>"; };
 		60999594189147280024CE3F /* VCStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCStyle.h; sourceTree = "<group>"; };
 		60999595189147280024CE3F /* VCStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCStyle.m; sourceTree = "<group>"; };
+		609995971891524B0024CE3F /* UIAlertView+BlockSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+BlockSupport.h"; sourceTree = "<group>"; };
+		609995981891524B0024CE3F /* UIAlertView+BlockSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+BlockSupport.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				6099956E18912C930024CE3F /* VCSecondViewController.m */,
 				6099958C18913A7D0024CE3F /* UIView+FirstResponder.h */,
 				6099958D18913A7D0024CE3F /* UIView+FirstResponder.m */,
+				609995971891524B0024CE3F /* UIAlertView+BlockSupport.h */,
+				609995981891524B0024CE3F /* UIAlertView+BlockSupport.m */,
 				6099957018912C930024CE3F /* Images.xcassets */,
 				6099955C18912C930024CE3F /* Supporting Files */,
 			);
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6099959218913ABF0024CE3F /* VCMethodViewController.m in Sources */,
+				609995991891524B0024CE3F /* UIAlertView+BlockSupport.m in Sources */,
 				6099956C18912C930024CE3F /* VCFirstViewController.m in Sources */,
 				6099956218912C930024CE3F /* main.m in Sources */,
 				60999596189147280024CE3F /* VCStyle.m in Sources */,

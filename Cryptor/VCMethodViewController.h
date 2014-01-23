@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonCrypto.h>
 
-typedef void (^ VCMethodCallback)(CCAlgorithm algorithm, NSString *title);
+typedef void (^ VCMethodCallback)(CCAlgorithm algorithm, NSString *title, NSInteger size);
 
 @interface VCMethodViewController : UITableViewController
 

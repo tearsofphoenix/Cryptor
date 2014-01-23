@@ -121,8 +121,12 @@
                     <tabBarItem key="tabBarItem" title="Crypt" image="first" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="doButton" destination="wrq-6V-TvK" id="4BU-Lx-7TE"/>
+                        <outlet property="ivLabel" destination="v9i-DZ-RsU" id="vy9-JT-Gna"/>
+                        <outlet property="ivTextField" destination="ldw-yN-t2C" id="PLu-WT-x67"/>
                         <outlet property="keyField" destination="svb-QP-mpl" id="zdL-Mc-oOa"/>
                         <outlet property="methodButton" destination="C5m-EC-tgf" id="qyE-Gc-aHJ"/>
+                        <outlet property="optionLabel" destination="cUv-gq-myK" id="Waq-9q-Dhz"/>
+                        <outlet property="optionSegmentControl" destination="vf7-YL-ilh" id="olA-Zh-Bjx"/>
                         <outlet property="plainTextView" destination="2Hj-rI-FY9" id="Xgi-e8-dlM"/>
                         <outlet property="resultTextView" destination="bII-z0-fJm" id="gBa-s9-Acb"/>
                         <outlet property="scrollView" destination="TMy-in-VLy" id="xaV-NX-hFJ"/>

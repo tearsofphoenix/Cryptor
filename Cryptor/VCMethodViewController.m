@@ -24,16 +24,24 @@
                            bundle: nibBundleOrNil];
     if (self)
     {
+        
+//        kCCKeySizeAES192
+        
+//        kCCKeySizeMinCAST
+//        kCCKeySizeMinRC4
+//        kCCKeySizeMinRC2
+//        kCCKeySizeMinBlowfish
+        
         _methods = [[NSMutableArray alloc] init];
         [_methods setArray: (@[
-                               @[@(kCCAlgorithmAES128), @"AES128"],
-                               @[@(kCCAlgorithmAES), @"AES"],
-                               @[@(kCCAlgorithmDES), @"DES"],
-                               @[@(kCCAlgorithm3DES), @"3DES"],
-                               @[@(kCCAlgorithmCAST), @"CAST"],
-                               @[@(kCCAlgorithmRC4), @"RC4"],
-                               @[@(kCCAlgorithmRC2), @"RC2"],
-                               @[@(kCCAlgorithmBlowfish), @"Blowfish"],
+                               @[@(kCCAlgorithmAES128), @"AES128", @(kCCKeySizeAES128)],
+                               @[@(kCCAlgorithmAES), @"AES", @(kCCKeySizeAES256)],
+                               @[@(kCCAlgorithmDES), @"DES", @(kCCKeySizeDES)],
+                               @[@(kCCAlgorithm3DES), @"3DES", @(kCCKeySize3DES)],
+                               @[@(kCCAlgorithmCAST), @"CAST", @(kCCKeySizeMaxCAST)],
+                               @[@(kCCAlgorithmRC4), @"RC4", @(kCCKeySizeMaxRC4)],
+                               @[@(kCCAlgorithmRC2), @"RC2", @(kCCKeySizeMaxRC2)],
+                               @[@(kCCAlgorithmBlowfish), @"Blowfish", @(kCCKeySizeMaxBlowfish)],
                                ])];
     }
     return self;
@@ -80,7 +88,7 @@ didSelectRowAtIndexPath: (NSIndexPath *)indexPath
     if (_callback)
     {
         NSArray *info = _methods[[indexPath row]];
-        _callback([info[0] integerValue], info[1]);
+        _callback([info[0] integerValue], info[1], [info[2] integerValue]);
         
         [self setCallback: nil];
     }
